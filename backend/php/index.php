@@ -13,4 +13,11 @@ Flight::route('GET /empleado', function () {
 
 });
 
+Flight::route('POST /empleado', function () {
+
+    $nombres = (Flight::request()->data->nombres);
+    print_r($nombres);
+    
+});
+
 Flight::start();
